@@ -35,7 +35,7 @@ retrieves relevant context, and generates accurate answers using an LLM.
 
 Add your architecture image here:
 
-![RAG Architecture](IMG_0747.PNG)
+![RAG Architecture](/screenshots/IMG_0747.PNG)
 
 ------------------------------------------------------------------------
 
