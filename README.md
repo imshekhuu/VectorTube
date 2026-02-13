@@ -71,7 +71,7 @@ Mode UI](screenshots/ui_dark.png)
 # ⚙️ Installation
 
 ``` bash
-git clone https://github.com/yourusername/youtube-transcript-chatbot.git
+git clone https://github.com/imshekhuu/youtube-transcript-chatbot.git
 cd youtube-transcript-chatbot
 
 python -m venv env
@@ -116,4 +116,4 @@ http://localhost:5000
 
 # 👨‍💻 Author
 
-Your Name
+Divya S. Shekhekhawat
