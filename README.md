@@ -52,7 +52,7 @@ Mode UI](screenshots/ui_dark.png)
 
 # 📂 Project Structure
 
-    youtube-transcript-chatbot/
+    VectorTube/
     │
     ├── app.py
     ├── requirements.txt

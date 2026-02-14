@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>VectorTube AI</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="header">
+    <div class="brand">VidContext AI</div>
+    <button class="toggle" onclick="toggleSidebar()">☰</button>
+</div>
+
+{% block content %}{% endblock %}
+
+<script src="{{ url_for('static', filename='ui.js') }}"></script>
+</body>
+</html>

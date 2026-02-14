@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="layout">
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="history">
+        <h3>Chats</h3>
+        <div class="history-item">YouTube Session</div>
+    </div>
+
+    <!-- Chat -->
+    <div class="chat">
+
+        <div id="chatBox" class="chat-box"></div>
+
+        <form class="input" onsubmit="return false;">
+            <input id="messageInput" placeholder="Ask about this video..." />
+            <button onclick="sendMessage()">Send</button>
+        </form>
+
+    </div>
+
+    <!-- Floating Video Panel -->
+    <div class="context">
+        <iframe id="player"></iframe>
+        <p>{{ video_url }}</p>
+    </div>
+
+</div>
+
+<script>
+const video="{{ video_url }}";
+
+function getID(url){
+    let m=url.match(/v=([^&]+)/);
+    return m?m[1]:"";
+}
+
+const id=getID(video);
+document.getElementById("player").src=
+`https://www.youtube.com/embed/${id}`;
+</script>
+
+{% endblock %}
