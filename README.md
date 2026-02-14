@@ -33,7 +33,7 @@ retrieves relevant context, and generates accurate answers using an LLM.
 
 # 🏗️ Architecture Diagram
 
-Add your architecture image here:
+architecture image here:
 
 ![RAG Architecture](/screenshots/IMG_0747.PNG)
 
@@ -41,9 +41,6 @@ Add your architecture image here:
 
 # 🎨 UI Screenshots
 
-Place your UI images inside the `/screenshots` folder.
-
-Example:
 
 ![Home UI](screenshots/home.png) ![Chat UI](screenshots/chat.png) ![Dark
 Mode UI](screenshots/ui_dark.png)
@@ -72,7 +69,7 @@ Mode UI](screenshots/ui_dark.png)
 
 ``` bash
 git clone https://github.com/imshekhuu/VectorTube.git
-cd youtube-transcript-chatbot
+cd VectorTube
 
 python -m venv env
 env\Scripts\activate
