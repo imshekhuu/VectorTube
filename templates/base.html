@@ -2,19 +2,56 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>VectorTube AI</title>
+<title>VidContext AI</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
 
 <div class="header">
-    <div class="brand">VidContext AI</div>
-    <button class="toggle" onclick="toggleSidebar()">☰</button>
+  <div class="brand">VidContext AI</div>
+  <button class="toggle" onclick="toggleSidebar()">☰</button>
 </div>
 
 {% block content %}{% endblock %}
 
+<canvas id="bg"></canvas>
+<div id="cursor"></div>
+
 <script src="{{ url_for('static', filename='ui.js') }}"></script>
+
+<script>
+/* particle background */
+const c=document.getElementById("bg");
+const ctx=c.getContext("2d");
+c.width=window.innerWidth;
+c.height=window.innerHeight;
+
+let dots=[...Array(60)].map(()=>({
+ x:Math.random()*c.width,
+ y:Math.random()*c.height,
+ v:0.2+Math.random()*0.5
+}));
+
+function draw(){
+ ctx.clearRect(0,0,c.width,c.height);
+ dots.forEach(d=>{
+  d.y+=d.v;
+  if(d.y>c.height)d.y=0;
+  ctx.fillStyle="rgba(139,92,246,.4)";
+  ctx.fillRect(d.x,d.y,2,2);
+ });
+ requestAnimationFrame(draw);
+}
+draw();
+
+/* cursor glow */
+const cursor=document.getElementById("cursor");
+document.addEventListener("mousemove",e=>{
+ cursor.style.left=e.clientX+"px";
+ cursor.style.top=e.clientY+"px";
+});
+</script>
+
 </body>
 </html>

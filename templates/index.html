@@ -2,17 +2,15 @@
 {% block content %}
 
 <div class="center">
+  <div class="glass-card">
+    <h1>Chat With Any YouTube Video</h1>
 
-    <div class="glass-card">
-        <h1>Chat With Any YouTube Video</h1>
+    <form method="POST" action="/chat">
+      <input name="video_link" placeholder="Paste YouTube link..." required>
+      <button type="submit">Start Chat →</button>
+    </form>
 
-        <form method="POST" action="/chat">
-            <input name="video_link" placeholder="Paste YouTube link..." required>
-            <button type="submit">Start Chat →</button>
-        </form>
-
-    </div>
-
+  </div>
 </div>
 
 {% endblock %}
