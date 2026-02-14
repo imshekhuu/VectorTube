@@ -71,7 +71,7 @@ Mode UI](screenshots/ui_dark.png)
 # ⚙️ Installation
 
 ``` bash
-git clone https://github.com/imshekhuu/youtube-transcript-chatbot.git
+git clone https://github.com/imshekhuu/VectorTube.git
 cd youtube-transcript-chatbot
 
 python -m venv env
