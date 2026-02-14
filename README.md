@@ -69,7 +69,7 @@ Mode UI](screenshots/ui_dark.png)
 
 ``` bash
 git clone https://github.com/imshekhuu/VectorTube.git
-cd youtube-transcript-chatbot
+cd VectorTube
 
 python -m venv env
 env\Scripts\activate
