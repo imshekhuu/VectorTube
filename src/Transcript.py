@@ -5,7 +5,7 @@ api = YouTubeTranscriptApi()
 
 
 class YouTubeTranscript:
-    def extract_YouTubeTranscript(video_id: str):
+    def extract_YouTubeTranscript(self, video_id):
         try:
             logger.info("Video Transcript extraction Started")
             transcript_list = api.fetch(video_id, languages=["en"])

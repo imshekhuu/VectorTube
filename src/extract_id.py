@@ -3,7 +3,7 @@ from logger import logger
 import re
 
 class Video_id:
-    def extract_video_id(url: str):
+    def extract_video_id(self, url):
         logger.info("Video id extraction Started")
         parsed = urlparse(url)
         query = parse_qs(parsed.query)
