@@ -42,8 +42,7 @@ architecture image here:
 # 🎨 UI Screenshots
 
 
-![Home UI](screenshots/home.png) ![Chat UI](screenshots/chat.png) ![Dark
-Mode UI](screenshots/ui_dark.png)
+![Home UI](screenshots/base_ui.png) ![Chat UI](screenshots/chat_ui.png)
 
 ------------------------------------------------------------------------
 
