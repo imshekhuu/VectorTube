@@ -1,125 +1,117 @@
-# 🎥 YouTube Transcript RAG Chatbot
+# 🎥 VectorTube
 
 <p align="center">
-  <img src="screenshots/vectortube-logo.jpg" width="500"/>
+  <img src="screenshots/vectortube-logo.jpg" width="520"/>
 </p>
 
-<h1 align="center">VectorTube</h1>
+<h3 align="center">
+AI Video Intelligence Platform
+</h3>
 
 <p align="center">
-  AI Video Intelligence Platform
+Built by <b>Codify</b>
 </p>
 
-An AI chatbot that lets users **chat with YouTube video transcripts**
-using Retrieval-Augmented Generation (RAG).
+<p align="center">
+  <img src="https://img.shields.io/badge/Product-VectorTube-black"/>
+  <img src="https://img.shields.io/badge/AI-RAG-purple"/>
+  <img src="https://img.shields.io/badge/Stack-Python-blue"/>
+  <img src="https://img.shields.io/badge/Company-Codify-grey"/>
+</p>
 
-The system extracts transcripts, converts them into embeddings,
-retrieves relevant context, and generates accurate answers using an LLM.
+---
 
-------------------------------------------------------------------------
+## ⚡ Overview
 
-# 🚀 Features
+**VectorTube** is an AI-native video intelligence platform developed by **Codify**.
 
--   Chat with YouTube videos
--   Transcript-based answers
--   RAG Architecture
--   Vector Database Search
--   Clean Web UI
--   Context-aware responses
+It transforms YouTube content into interactive knowledge by combining transcript processing, semantic search, and Retrieval-Augmented Generation (RAG).  
+Instead of watching long videos, users can directly interact with the information inside them.
 
-------------------------------------------------------------------------
+This repository contains the core system powering the VectorTube product.
 
-# 🧠 How It Works
+---
 
-1.  Extract YouTube Transcript
-2.  Split into text chunks
-3.  Generate embeddings
-4.  Store in Vector Database
-5.  Retrieve relevant context
-6.  Send context + query to LLM
-7.  Generate final response
+## 🔥 What Makes It Different
 
-------------------------------------------------------------------------
+- Transcript-first AI reasoning
+- Context-aware retrieval pipeline
+- Lightweight RAG architecture
+- Fast web-based interface
+- Product-focused AI design
 
-# 🏗️ Architecture Diagram
+---
 
-architecture image here:
+## 🧠 System Flow
 
-![RAG Architecture](/screenshots/IMG_0747.PNG)
+1. Extract transcript from video  
+2. Split into semantic chunks  
+3. Generate embeddings  
+4. Store vectors  
+5. Retrieve relevant context  
+6. Send context to LLM  
+7. Generate grounded responses  
 
-------------------------------------------------------------------------
+---
 
-# 🎨 UI Screenshots
+## 🏗 Architecture
 
+<p align="center">
+  <img src="screenshots/IMG_0747.PNG" width="80%"/>
+</p>
 
-![Home UI](screenshots/base_ui.png) ![Chat UI](screenshots/chat_ui.png)
+---
 
-------------------------------------------------------------------------
+## 🎨 Product Preview
 
-# 📂 Project Structure
+<p align="center">
+  <img src="screenshots/base_ui.png" width="45%"/>
+  <img src="screenshots/chat_ui.png" width="45%"/>
+</p>
 
-    VectorTube/
-    │
-    ├── app.py
-    ├── requirements.txt
-    ├── rag/
-    │   ├── loader.py
-    │   ├── embeddings.py
-    │   ├── retriever.py
-    │   └── chain.py
-    │
-    ├── templates/
-    ├── static/
-    └── screenshots/
+---
 
-------------------------------------------------------------------------
+## 📂 Repository Structure
 
-# ⚙️ Installation
-
-``` bash
-git clone https://github.com/imshekhuu/VectorTube.git
-cd VectorTube
-
-python -m venv env
-env\Scripts\activate
-
-pip install -r requirements.txt
+```bash
+VectorTube/
+│
+├── app.py
+├── rag/
+│   ├── loader.py
+│   ├── embeddings.py
+│   ├── retriever.py
+│   └── chain.py
+│
+├── templates/
+├── static/
+└── screenshots/
 ```
 
-------------------------------------------------------------------------
+---
 
-# ▶️ Run Project
+## ▶ Run Locally
 
-``` bash
+```bash
 python app.py
 ```
 
-Open:
+---
 
-http://localhost:5000
+## 🧩 Technology
 
-------------------------------------------------------------------------
+Python • LangChain • Vector Databases • Flask • LLM APIs
 
-# 🔧 Tech Stack
+---
 
--   Python
--   LangChain
--   FAISS / ChromaDB
--   Flask
--   HTML CSS JavaScript
--   LLM API
+## 🏢 Codify
 
-------------------------------------------------------------------------
+Codify is an AI Product Studio focused on building intelligent software platforms, AI-native tools, and next-generation digital systems.
 
-# 📈 Future Improvements
+VectorTube is an official Codify product.
 
--   Multiple video support
--   Streaming responses
--   Authentication
--   Cloud deployment
+---
 
-------------------------------------------------------------------------
+## 📌 Status
 
-# 👨‍💻 Author
-
-Divya S. Shekhekhawat
+Active Development — Early Product Release
