@@ -1,5 +1,15 @@
 # 🎥 YouTube Transcript RAG Chatbot
 
+<p align="center">
+  <img src="assets/vectortube-logo.png" width="500"/>
+</p>
+
+<h1 align="center">VectorTube</h1>
+
+<p align="center">
+  AI Video Intelligence Platform
+</p>
+
 An AI chatbot that lets users **chat with YouTube video transcripts**
 using Retrieval-Augmented Generation (RAG).
 
