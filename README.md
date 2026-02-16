@@ -1,7 +1,7 @@
 # 🎥 YouTube Transcript RAG Chatbot
 
 <p align="center">
-  <img src="assets/vectortube-logo.png" width="500"/>
+  <img src="screenshots/vectortube-logo.jpg" width="500"/>
 </p>
 
 <h1 align="center">VectorTube</h1>
