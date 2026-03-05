@@ -2,7 +2,7 @@ import re
 
 from flask import Flask, jsonify, render_template, request
 from huggingface_hub.errors import HfHubHTTPError
-
+import os
 from rag.chain import VectorTubeChain
 from src.logger import logger
 
@@ -99,6 +99,6 @@ def api_chat():
         logger.exception("Unexpected error while handling /api/chat")
         return jsonify({"error": "Could not generate response. Try again."}), 500
 
-
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)
