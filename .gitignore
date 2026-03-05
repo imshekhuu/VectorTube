@@ -1,1 +1,21 @@
+# environment variables
 .env
+
+# virtual environments
+regvenv/
+venv/
+.env/
+
+# python cache
+__pycache__/
+*.pyc
+
+# logs
+logs/
+
+# jupyter
+.ipynb_checkpoints
+
+# OS
+.DS_Store
+Thumbs.db
