@@ -14,7 +14,7 @@
   <form class="input" onsubmit="return false;">
     <textarea id="messageInput" rows="1"
     placeholder="Ask about this video..."></textarea>
-    <button onclick="sendMessage()">Send</button>
+    <button type="button" onclick="sendMessage()">Send</button>
   </form>
 </div>
 
@@ -26,11 +26,15 @@
 </div>
 
 <script>
-const video="{{ video_url }}";
+window.vectorTubeVideoUrl = "{{ video_url }}";
+const video = window.vectorTubeVideoUrl;
 
 function getID(url){
- let m=url.match(/v=([^&]+)/);
- return m?m[1]:"";
+ const matchFromQuery = url.match(/[?&]v=([^&]+)/);
+ if (matchFromQuery) return matchFromQuery[1];
+
+ const matchFromPath = url.match(/(?:youtu\.be\/|shorts\/|embed\/|live\/)([^?&/]+)/);
+ return matchFromPath ? matchFromPath[1] : "";
 }
 
 const id=getID(video);

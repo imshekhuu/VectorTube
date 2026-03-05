@@ -1,5 +1,4 @@
 from langchain_community.vectorstores import FAISS
-from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 from langchain_huggingface import HuggingFaceEmbeddings
 from src.logger import logger
 from dotenv import load_dotenv

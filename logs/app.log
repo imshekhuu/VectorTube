@@ -1,0 +1,836 @@
+[2026-03-05 16:23:16,978] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2026-03-05 16:23:16,978] INFO - [33mPress CTRL+C to quit[0m
+[2026-03-05 16:23:16,981] INFO -  * Restarting with stat
+[2026-03-05 16:23:31,249] WARNING -  * Debugger is active!
+[2026-03-05 16:23:31,254] INFO -  * Debugger PIN: 506-992-800
+[2026-03-05 16:23:52,309] INFO - 127.0.0.1 - - [05/Mar/2026 16:23:52] "GET / HTTP/1.1" 200 -
+[2026-03-05 16:23:52,437] INFO - 127.0.0.1 - - [05/Mar/2026 16:23:52] "GET /static/style.css HTTP/1.1" 200 -
+[2026-03-05 16:23:52,444] INFO - 127.0.0.1 - - [05/Mar/2026 16:23:52] "GET /static/ui.js HTTP/1.1" 200 -
+[2026-03-05 16:23:52,520] INFO - 127.0.0.1 - - [05/Mar/2026 16:23:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2026-03-05 16:24:49,108] INFO - 127.0.0.1 - - [05/Mar/2026 16:24:49] "POST /chat HTTP/1.1" 200 -
+[2026-03-05 16:24:49,144] INFO - 127.0.0.1 - - [05/Mar/2026 16:24:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2026-03-05 16:24:49,152] INFO - 127.0.0.1 - - [05/Mar/2026 16:24:49] "[36mGET /static/ui.js HTTP/1.1[0m" 304 -
+[2026-03-05 16:25:06,543] INFO - Video ID extraction started
+[2026-03-05 16:25:06,544] INFO - Video ID extraction completed
+[2026-03-05 16:25:06,544] INFO - Video ID extraction started
+[2026-03-05 16:25:06,544] INFO - Video ID extraction completed
+[2026-03-05 16:25:06,544] INFO - Video transcript extraction started
+[2026-03-05 16:25:09,506] INFO - Video transcript extraction completed
+[2026-03-05 16:25:09,506] INFO - splitting Started
+[2026-03-05 16:25:09,520] INFO - splitting completed
+[2026-03-05 16:25:09,520] INFO - embedding Started
+[2026-03-05 16:25:09,587] INFO - Use pytorch device_name: cpu
+[2026-03-05 16:25:09,587] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2026-03-05 16:25:10,725] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:25:10,726] WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[2026-03-05 16:25:10,805] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+[2026-03-05 16:25:11,249] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:25:11,356] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+[2026-03-05 16:25:11,649] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:25:11,714] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+[2026-03-05 16:25:12,001] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:25:12,074] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+[2026-03-05 16:25:12,592] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:25:12,663] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+[2026-03-05 16:25:12,947] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:25:12,984] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+[2026-03-05 16:25:13,253] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+[2026-03-05 16:25:13,589] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:25:13,900] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+[2026-03-05 16:25:14,971] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:25:15,027] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+[2026-03-05 16:25:15,305] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:25:15,398] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+[2026-03-05 16:25:15,766] INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+[2026-03-05 16:25:16,099] INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+[2026-03-05 16:25:16,892] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:25:16,940] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+[2026-03-05 16:25:17,255] INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+[2026-03-05 16:25:20,418] INFO - Loading faiss with AVX2 support.
+[2026-03-05 16:25:21,023] INFO - Successfully loaded faiss with AVX2 support.
+[2026-03-05 16:25:21,085] INFO - embedding completed
+[2026-03-05 16:25:21,085] INFO - Semantic Search Started
+[2026-03-05 16:25:21,086] INFO - Semantic Search completed
+[2026-03-05 16:25:22,550] INFO - HTTP Request: POST https://router.huggingface.co/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+[2026-03-05 16:25:22,624] ERROR - Unexpected error while handling /api/chat
+Traceback (most recent call last):
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\huggingface_hub\utils\_http.py", line 657, in hf_raise_for_status
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://router.huggingface.co/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\app.py", line 42, in api_chat
+    response = chain.ask(video_url=video_url, question=question)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\rag\chain.py", line 107, in ask
+    answer = chain.invoke({"question": cleaned_question}).strip()
+             ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 3157, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 402, in invoke
+    self.generate_prompt(
+    ~~~~~~~~~~~~~~~~~~~~^
+        [self._convert_input(input)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ).generations[0][0],
+    ^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1121, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 931, in generate
+    self._generate_with_cache(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1233, in _generate_with_cache
+    result = self._generate(
+        messages, stop=stop, run_manager=run_manager, **kwargs
+    )
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\langchain_huggingface\chat_models\huggingface.py", line 750, in _generate
+    answer = self.llm.client.chat_completion(messages=message_dicts, **params)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\huggingface_hub\inference\_client.py", line 933, in chat_completion
+    data = self._inner_post(request_parameters, stream=stream)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\huggingface_hub\inference\_client.py", line 286, in _inner_post
+    hf_raise_for_status(response)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\huggingface_hub\utils\_http.py", line 752, in hf_raise_for_status
+    raise _format(HfHubHTTPError, str(e), response) from e
+huggingface_hub.errors.HfHubHTTPError: Client error '401 Unauthorized' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-69a96117-0dd6649a0fe3eaa04f1791a0;9e7fd7dc-cde8-460a-b254-d3a576af5d94)
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+User Access Token "teste" is expired
+[2026-03-05 16:25:23,185] INFO - 127.0.0.1 - - [05/Mar/2026 16:25:23] "[35m[1mPOST /api/chat HTTP/1.1[0m" 500 -
+[2026-03-05 16:26:11,237] INFO - Video ID extraction started
+[2026-03-05 16:26:11,237] INFO - Video ID extraction completed
+[2026-03-05 16:26:12,399] INFO - HTTP Request: POST https://router.huggingface.co/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+[2026-03-05 16:26:12,400] ERROR - Unexpected error while handling /api/chat
+Traceback (most recent call last):
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\huggingface_hub\utils\_http.py", line 657, in hf_raise_for_status
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://router.huggingface.co/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\app.py", line 42, in api_chat
+    response = chain.ask(video_url=video_url, question=question)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\rag\chain.py", line 107, in ask
+    answer = chain.invoke({"question": cleaned_question}).strip()
+             ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 3157, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 402, in invoke
+    self.generate_prompt(
+    ~~~~~~~~~~~~~~~~~~~~^
+        [self._convert_input(input)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ).generations[0][0],
+    ^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1121, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 931, in generate
+    self._generate_with_cache(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1233, in _generate_with_cache
+    result = self._generate(
+        messages, stop=stop, run_manager=run_manager, **kwargs
+    )
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\langchain_huggingface\chat_models\huggingface.py", line 750, in _generate
+    answer = self.llm.client.chat_completion(messages=message_dicts, **params)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\huggingface_hub\inference\_client.py", line 933, in chat_completion
+    data = self._inner_post(request_parameters, stream=stream)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\huggingface_hub\inference\_client.py", line 286, in _inner_post
+    hf_raise_for_status(response)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\huggingface_hub\utils\_http.py", line 752, in hf_raise_for_status
+    raise _format(HfHubHTTPError, str(e), response) from e
+huggingface_hub.errors.HfHubHTTPError: Client error '401 Unauthorized' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-69a96149-7644aac10e8ce65e2d03e27c;4b9a5d25-8677-4f8c-9bf8-373fb0887fb1)
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+User Access Token "teste" is expired
+[2026-03-05 16:26:12,404] INFO - 127.0.0.1 - - [05/Mar/2026 16:26:12] "[35m[1mPOST /api/chat HTTP/1.1[0m" 500 -
+[2026-03-05 16:28:20,473] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2026-03-05 16:28:20,474] INFO - [33mPress CTRL+C to quit[0m
+[2026-03-05 16:28:20,476] INFO -  * Restarting with stat
+[2026-03-05 16:28:31,395] WARNING -  * Debugger is active!
+[2026-03-05 16:28:31,399] INFO -  * Debugger PIN: 506-992-800
+[2026-03-05 16:29:01,978] INFO - 127.0.0.1 - - [05/Mar/2026 16:29:01] "GET / HTTP/1.1" 200 -
+[2026-03-05 16:29:02,093] INFO - 127.0.0.1 - - [05/Mar/2026 16:29:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2026-03-05 16:29:02,103] INFO - 127.0.0.1 - - [05/Mar/2026 16:29:02] "[36mGET /static/ui.js HTTP/1.1[0m" 304 -
+[2026-03-05 16:29:10,710] INFO - 127.0.0.1 - - [05/Mar/2026 16:29:10] "POST /chat HTTP/1.1" 200 -
+[2026-03-05 16:29:10,741] INFO - 127.0.0.1 - - [05/Mar/2026 16:29:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2026-03-05 16:29:10,743] INFO - 127.0.0.1 - - [05/Mar/2026 16:29:10] "[36mGET /static/ui.js HTTP/1.1[0m" 304 -
+[2026-03-05 16:29:26,291] INFO - Video ID extraction started
+[2026-03-05 16:29:26,291] INFO - Video ID extraction started
+[2026-03-05 16:29:26,291] INFO - Video transcript extraction started
+[2026-03-05 16:29:28,950] INFO - Video transcript extraction completed
+[2026-03-05 16:29:28,950] INFO - splitting Started
+[2026-03-05 16:29:28,957] INFO - splitting completed
+[2026-03-05 16:29:28,957] INFO - embedding Started
+[2026-03-05 16:29:28,960] INFO - Use pytorch device_name: cpu
+[2026-03-05 16:29:28,961] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2026-03-05 16:29:29,991] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:29:30,042] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+[2026-03-05 16:29:30,308] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:29:30,346] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+[2026-03-05 16:29:30,614] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:29:30,710] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+[2026-03-05 16:29:30,997] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:29:30,997] WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[2026-03-05 16:29:31,122] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+[2026-03-05 16:29:31,415] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:29:31,880] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+[2026-03-05 16:29:32,180] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:29:32,215] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+[2026-03-05 16:29:32,518] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+[2026-03-05 16:29:32,800] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:29:32,855] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+[2026-03-05 16:29:34,044] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:29:34,080] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+[2026-03-05 16:29:34,349] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:29:34,405] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+[2026-03-05 16:29:34,830] INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+[2026-03-05 16:29:35,264] INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+[2026-03-05 16:29:35,797] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:29:35,919] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+[2026-03-05 16:29:36,194] INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+[2026-03-05 16:29:37,617] INFO - Loading faiss with AVX2 support.
+[2026-03-05 16:29:37,660] INFO - Successfully loaded faiss with AVX2 support.
+[2026-03-05 16:29:37,673] INFO - embedding completed
+[2026-03-05 16:29:37,673] INFO - Semantic Search Started
+[2026-03-05 16:29:37,674] INFO - Semantic Search completed
+[2026-03-05 16:29:38,472] INFO - HTTP Request: POST https://router.huggingface.co/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+[2026-03-05 16:29:38,472] ERROR - Unexpected error while handling /api/chat
+Traceback (most recent call last):
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\huggingface_hub\utils\_http.py", line 657, in hf_raise_for_status
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://router.huggingface.co/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\app.py", line 42, in api_chat
+    response = chain.ask(video_url=video_url, question=question)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\rag\chain.py", line 107, in ask
+    answer = chain.invoke({"question": cleaned_question}).strip()
+             ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 3157, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 402, in invoke
+    self.generate_prompt(
+    ~~~~~~~~~~~~~~~~~~~~^
+        [self._convert_input(input)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ).generations[0][0],
+    ^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1121, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 931, in generate
+    self._generate_with_cache(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1233, in _generate_with_cache
+    result = self._generate(
+        messages, stop=stop, run_manager=run_manager, **kwargs
+    )
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\langchain_huggingface\chat_models\huggingface.py", line 750, in _generate
+    answer = self.llm.client.chat_completion(messages=message_dicts, **params)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\huggingface_hub\inference\_client.py", line 933, in chat_completion
+    data = self._inner_post(request_parameters, stream=stream)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\huggingface_hub\inference\_client.py", line 286, in _inner_post
+    hf_raise_for_status(response)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\.venv\Lib\site-packages\huggingface_hub\utils\_http.py", line 752, in hf_raise_for_status
+    raise _format(HfHubHTTPError, str(e), response) from e
+huggingface_hub.errors.HfHubHTTPError: Client error '401 Unauthorized' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-69a96218-0e031c43063fe53e22ec2a21;d350abd6-f095-41fe-8d20-ff8e42f00d19)
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+User Access Token "teste" is expired
+[2026-03-05 16:29:38,482] INFO - 127.0.0.1 - - [05/Mar/2026 16:29:38] "[35m[1mPOST /api/chat HTTP/1.1[0m" 500 -
+[2026-03-05 16:37:07,407] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2026-03-05 16:37:07,407] INFO - [33mPress CTRL+C to quit[0m
+[2026-03-05 16:37:07,410] INFO -  * Restarting with stat
+[2026-03-05 16:37:21,609] WARNING -  * Debugger is active!
+[2026-03-05 16:37:21,616] INFO -  * Debugger PIN: 506-992-800
+[2026-03-05 16:37:27,591] INFO - 127.0.0.1 - - [05/Mar/2026 16:37:27] "POST /chat HTTP/1.1" 200 -
+[2026-03-05 16:37:27,705] INFO - 127.0.0.1 - - [05/Mar/2026 16:37:27] "[36mGET /static/ui.js HTTP/1.1[0m" 304 -
+[2026-03-05 16:37:27,712] INFO - 127.0.0.1 - - [05/Mar/2026 16:37:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2026-03-05 16:37:48,572] INFO - Video ID extraction started
+[2026-03-05 16:37:48,573] INFO - Video ID extraction started
+[2026-03-05 16:37:48,573] INFO - Video transcript extraction started
+[2026-03-05 16:37:51,976] INFO - Video transcript extraction completed
+[2026-03-05 16:37:51,976] INFO - splitting Started
+[2026-03-05 16:37:51,984] INFO - splitting completed
+[2026-03-05 16:37:51,984] INFO - embedding Started
+[2026-03-05 16:37:51,988] INFO - Use pytorch device_name: cpu
+[2026-03-05 16:37:51,988] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2026-03-05 16:37:53,141] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:37:53,142] WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[2026-03-05 16:37:53,191] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+[2026-03-05 16:37:53,561] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:37:53,652] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+[2026-03-05 16:37:53,940] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:37:53,985] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+[2026-03-05 16:37:54,426] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:37:54,466] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+[2026-03-05 16:37:54,726] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:37:54,762] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+[2026-03-05 16:37:55,040] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:37:55,101] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+[2026-03-05 16:37:55,486] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+[2026-03-05 16:37:55,826] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:37:55,884] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+[2026-03-05 16:37:56,396] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:37:56,434] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+[2026-03-05 16:37:56,821] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:37:56,859] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+[2026-03-05 16:37:57,144] INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+[2026-03-05 16:37:57,415] INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+[2026-03-05 16:37:57,811] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:37:57,879] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+[2026-03-05 16:37:58,145] INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+[2026-03-05 16:37:59,514] INFO - Loading faiss with AVX2 support.
+[2026-03-05 16:37:59,555] INFO - Successfully loaded faiss with AVX2 support.
+[2026-03-05 16:37:59,568] INFO - embedding completed
+[2026-03-05 16:37:59,568] INFO - Semantic Search Started
+[2026-03-05 16:37:59,568] INFO - Semantic Search completed
+[2026-03-05 16:38:00,501] INFO - HTTP Request: POST https://router.huggingface.co/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+[2026-03-05 16:38:00,502] INFO - 127.0.0.1 - - [05/Mar/2026 16:38:00] "[31m[1mPOST /api/chat HTTP/1.1[0m" 401 -
+[2026-03-05 16:40:56,382] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2026-03-05 16:40:56,382] INFO - [33mPress CTRL+C to quit[0m
+[2026-03-05 16:40:56,385] INFO -  * Restarting with stat
+[2026-03-05 16:41:11,373] WARNING -  * Debugger is active!
+[2026-03-05 16:41:11,377] INFO -  * Debugger PIN: 506-992-800
+[2026-03-05 16:41:11,765] INFO - 127.0.0.1 - - [05/Mar/2026 16:41:11] "POST /chat HTTP/1.1" 200 -
+[2026-03-05 16:41:11,919] INFO - 127.0.0.1 - - [05/Mar/2026 16:41:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2026-03-05 16:41:11,920] INFO - 127.0.0.1 - - [05/Mar/2026 16:41:11] "[36mGET /static/ui.js HTTP/1.1[0m" 304 -
+[2026-03-05 16:41:24,603] INFO - Video ID extraction started
+[2026-03-05 16:41:24,604] INFO - Video ID extraction started
+[2026-03-05 16:41:24,604] INFO - Video transcript extraction started
+[2026-03-05 16:41:42,689] INFO - Video transcript extraction completed
+[2026-03-05 16:41:42,690] INFO - splitting Started
+[2026-03-05 16:41:42,697] INFO - splitting completed
+[2026-03-05 16:41:42,697] INFO - embedding Started
+[2026-03-05 16:41:42,702] INFO - Use pytorch device_name: cpu
+[2026-03-05 16:41:42,702] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2026-03-05 16:41:44,543] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:41:44,893] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+[2026-03-05 16:41:45,705] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:41:46,231] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+[2026-03-05 16:41:46,696] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:41:46,903] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+[2026-03-05 16:41:47,369] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:41:47,439] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+[2026-03-05 16:41:48,107] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:41:48,480] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+[2026-03-05 16:41:48,843] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:41:49,395] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+[2026-03-05 16:41:49,678] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+[2026-03-05 16:41:50,044] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:41:50,357] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+[2026-03-05 16:41:51,210] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:41:51,394] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+[2026-03-05 16:41:52,365] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:41:52,778] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+[2026-03-05 16:41:53,772] INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+[2026-03-05 16:41:54,252] INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+[2026-03-05 16:41:55,237] INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-05 16:41:56,564] INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+[2026-03-05 16:41:56,978] INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+[2026-03-05 16:41:58,381] INFO - Loading faiss with AVX2 support.
+[2026-03-05 16:41:58,422] INFO - Successfully loaded faiss with AVX2 support.
+[2026-03-05 16:41:58,433] INFO - embedding completed
+[2026-03-05 16:41:58,433] INFO - Semantic Search Started
+[2026-03-05 16:41:58,433] INFO - Semantic Search completed
+[2026-03-05 16:41:59,944] INFO - HTTP Request: POST https://router.huggingface.co/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+[2026-03-05 16:41:59,945] INFO - 127.0.0.1 - - [05/Mar/2026 16:41:59] "[31m[1mPOST /api/chat HTTP/1.1[0m" 401 -
+[2026-03-05 16:52:23,550] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2026-03-05 16:52:23,550] INFO - [33mPress CTRL+C to quit[0m
+[2026-03-05 16:52:23,606] INFO -  * Restarting with watchdog (windowsapi)
+[2026-03-05 16:52:35,671] WARNING -  * Debugger is active!
+[2026-03-05 16:52:35,676] INFO -  * Debugger PIN: 108-066-851
+[2026-03-05 16:54:32,623] INFO - 127.0.0.1 - - [05/Mar/2026 16:54:32] "GET / HTTP/1.1" 200 -
+[2026-03-05 16:54:32,753] INFO - 127.0.0.1 - - [05/Mar/2026 16:54:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2026-03-05 16:54:32,754] INFO - 127.0.0.1 - - [05/Mar/2026 16:54:32] "[36mGET /static/ui.js HTTP/1.1[0m" 304 -
+[2026-03-05 16:54:39,551] INFO - 127.0.0.1 - - [05/Mar/2026 16:54:39] "POST /chat HTTP/1.1" 200 -
+[2026-03-05 16:54:39,573] INFO - 127.0.0.1 - - [05/Mar/2026 16:54:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2026-03-05 16:54:39,579] INFO - 127.0.0.1 - - [05/Mar/2026 16:54:39] "[36mGET /static/ui.js HTTP/1.1[0m" 304 -
+[2026-03-05 16:54:58,919] INFO - Video ID extraction started
+[2026-03-05 16:54:58,919] INFO - Video ID extraction completed
+[2026-03-05 16:54:58,919] INFO - Video ID extraction started
+[2026-03-05 16:54:58,919] INFO - Video ID extraction completed
+[2026-03-05 16:54:58,919] INFO - Video transcript extraction started
+[2026-03-05 16:55:02,509] INFO - Video transcript extraction completed
+[2026-03-05 16:55:02,510] INFO - splitting Started
+[2026-03-05 16:55:02,553] INFO - splitting completed
+[2026-03-05 16:55:02,553] INFO - embedding Started
+[2026-03-05 16:55:02,557] INFO - Use pytorch device_name: cpu
+[2026-03-05 16:55:02,558] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2026-03-05 16:55:16,869] INFO - Loading faiss with AVX2 support.
+[2026-03-05 16:55:16,906] INFO - Successfully loaded faiss with AVX2 support.
+[2026-03-05 16:55:16,927] INFO - embedding completed
+[2026-03-05 16:55:16,927] INFO - Semantic Search Started
+[2026-03-05 16:55:16,927] INFO - Semantic Search completed
+[2026-03-05 16:55:19,032] INFO - 127.0.0.1 - - [05/Mar/2026 16:55:19] "[35m[1mPOST /api/chat HTTP/1.1[0m" 502 -
+[2026-03-05 17:05:02,096] INFO -  * Detected change in 'C:\\Users\\Divya S. Shekhawat\\Downloads\\CODING\\PYTHON\\PROJECTS\\VectorTube\\rag\\chain.py', reloading
+[2026-03-05 17:05:02,102] INFO -  * Detected change in 'C:\\Users\\Divya S. Shekhawat\\Downloads\\CODING\\PYTHON\\PROJECTS\\VectorTube\\rag\\chain.py', reloading
+[2026-03-05 17:05:04,162] INFO -  * Restarting with watchdog (windowsapi)
+[2026-03-05 17:05:17,494] WARNING -  * Debugger is active!
+[2026-03-05 17:05:17,499] INFO -  * Debugger PIN: 108-066-851
+[2026-03-05 17:06:21,088] INFO -  * Detected change in 'C:\\Users\\Divya S. Shekhawat\\Downloads\\CODING\\PYTHON\\PROJECTS\\VectorTube\\app.py', reloading
+[2026-03-05 17:06:22,663] INFO -  * Restarting with watchdog (windowsapi)
+[2026-03-05 17:06:39,227] WARNING -  * Debugger is active!
+[2026-03-05 17:06:39,233] INFO -  * Debugger PIN: 108-066-851
+[2026-03-05 17:09:31,605] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2026-03-05 17:09:31,605] INFO - [33mPress CTRL+C to quit[0m
+[2026-03-05 17:09:31,627] INFO -  * Restarting with watchdog (windowsapi)
+[2026-03-05 17:09:47,504] WARNING -  * Debugger is active!
+[2026-03-05 17:09:47,510] INFO -  * Debugger PIN: 108-066-851
+[2026-03-05 17:09:47,786] INFO - 127.0.0.1 - - [05/Mar/2026 17:09:47] "POST /chat HTTP/1.1" 200 -
+[2026-03-05 17:09:48,193] INFO - 127.0.0.1 - - [05/Mar/2026 17:09:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2026-03-05 17:09:48,197] INFO - 127.0.0.1 - - [05/Mar/2026 17:09:48] "[36mGET /static/ui.js HTTP/1.1[0m" 304 -
+[2026-03-05 17:10:08,726] INFO - Video ID extraction started
+[2026-03-05 17:10:08,726] INFO - Video ID extraction completed
+[2026-03-05 17:10:08,726] INFO - Video ID extraction started
+[2026-03-05 17:10:08,727] INFO - Video ID extraction completed
+[2026-03-05 17:10:08,727] INFO - Video transcript extraction started
+[2026-03-05 17:10:21,036] INFO - Video transcript extraction completed
+[2026-03-05 17:10:21,037] INFO - splitting Started
+[2026-03-05 17:10:21,080] INFO - splitting completed
+[2026-03-05 17:10:21,080] INFO - embedding Started
+[2026-03-05 17:10:21,085] INFO - Use pytorch device_name: cpu
+[2026-03-05 17:10:21,085] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2026-03-05 17:10:42,385] INFO - Loading faiss with AVX2 support.
+[2026-03-05 17:10:42,465] INFO - Successfully loaded faiss with AVX2 support.
+[2026-03-05 17:10:42,483] INFO - embedding completed
+[2026-03-05 17:10:42,483] INFO - Semantic Search Started
+[2026-03-05 17:10:42,484] INFO - Semantic Search completed
+[2026-03-05 17:10:45,016] ERROR - Hugging Face API error while handling /api/chat
+Traceback (most recent call last):
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\huggingface_hub\utils\_http.py", line 403, in hf_raise_for_status
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://router.huggingface.co/novita/v3/openai/chat/completions
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\app.py", line 56, in api_chat
+    response = chain.ask(video_url=video_url, question=question)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\rag\chain.py", line 107, in ask
+    answer = chain.invoke({"question": cleaned_question}).strip()
+             ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\langchain_core\runnables\base.py", line 3157, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 402, in invoke
+    self.generate_prompt(
+    ~~~~~~~~~~~~~~~~~~~~^
+        [self._convert_input(input)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ).generations[0][0],
+    ^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1121, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 931, in generate
+    self._generate_with_cache(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1233, in _generate_with_cache
+    result = self._generate(
+        messages, stop=stop, run_manager=run_manager, **kwargs
+    )
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\langchain_huggingface\chat_models\huggingface.py", line 750, in _generate
+    answer = self.llm.client.chat_completion(messages=message_dicts, **params)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\huggingface_hub\inference\_client.py", line 915, in chat_completion
+    data = self._inner_post(request_parameters, stream=stream)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\huggingface_hub\inference\_client.py", line 275, in _inner_post
+    hf_raise_for_status(response)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\huggingface_hub\utils\_http.py", line 476, in hf_raise_for_status
+    raise _format(HfHubHTTPError, str(e), response) from e
+huggingface_hub.errors.HfHubHTTPError: 401 Client Error: Unauthorized for url: https://router.huggingface.co/novita/v3/openai/chat/completions (Request ID: Root=1-69a96bba-4857ffd36ce694645e61120d;573f02dd-6c1a-42df-b02d-32328d34b97d)
+
+User Access Token "teste" is expired
+[2026-03-05 17:10:45,527] INFO - 127.0.0.1 - - [05/Mar/2026 17:10:45] "[35m[1mPOST /api/chat HTTP/1.1[0m" 502 -
+[2026-03-05 17:12:34,129] INFO -  * Detected change in 'C:\\Users\\Divya S. Shekhawat\\Downloads\\CODING\\PYTHON\\PROJECTS\\VectorTube\\rag\\chain.py', reloading
+[2026-03-05 17:12:35,620] INFO -  * Restarting with watchdog (windowsapi)
+[2026-03-05 17:13:00,825] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2026-03-05 17:13:00,825] INFO - [33mPress CTRL+C to quit[0m
+[2026-03-05 17:13:00,844] INFO -  * Restarting with watchdog (windowsapi)
+[2026-03-05 17:13:16,520] WARNING -  * Debugger is active!
+[2026-03-05 17:13:16,526] INFO -  * Debugger PIN: 108-066-851
+[2026-03-05 17:13:16,819] INFO - 127.0.0.1 - - [05/Mar/2026 17:13:16] "POST /chat HTTP/1.1" 200 -
+[2026-03-05 17:13:16,942] INFO - 127.0.0.1 - - [05/Mar/2026 17:13:16] "[36mGET /static/ui.js HTTP/1.1[0m" 304 -
+[2026-03-05 17:13:16,946] INFO - 127.0.0.1 - - [05/Mar/2026 17:13:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2026-03-05 17:13:30,832] INFO - Video ID extraction started
+[2026-03-05 17:13:30,832] INFO - Video ID extraction completed
+[2026-03-05 17:13:30,832] INFO - Video ID extraction started
+[2026-03-05 17:13:30,832] INFO - Video ID extraction completed
+[2026-03-05 17:13:30,832] INFO - Video transcript extraction started
+[2026-03-05 17:13:34,426] INFO - Video transcript extraction completed
+[2026-03-05 17:13:34,427] INFO - splitting Started
+[2026-03-05 17:13:34,471] INFO - splitting completed
+[2026-03-05 17:13:34,471] INFO - embedding Started
+[2026-03-05 17:13:34,475] INFO - Use pytorch device_name: cpu
+[2026-03-05 17:13:34,476] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2026-03-05 17:13:59,286] INFO - Loading faiss with AVX2 support.
+[2026-03-05 17:13:59,321] INFO - Successfully loaded faiss with AVX2 support.
+[2026-03-05 17:13:59,340] INFO - embedding completed
+[2026-03-05 17:13:59,340] INFO - Semantic Search Started
+[2026-03-05 17:13:59,341] INFO - Semantic Search completed
+[2026-03-05 17:14:07,288] ERROR - Hugging Face API error while handling /api/chat
+Traceback (most recent call last):
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\huggingface_hub\utils\_http.py", line 403, in hf_raise_for_status
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://router.huggingface.co/novita/v3/openai/chat/completions
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\app.py", line 56, in api_chat
+    response = chain.ask(video_url=video_url, question=question)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\rag\chain.py", line 106, in ask
+    answer = chain.invoke({"question": cleaned_question}).strip()
+             ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\langchain_core\runnables\base.py", line 3157, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 402, in invoke
+    self.generate_prompt(
+    ~~~~~~~~~~~~~~~~~~~~^
+        [self._convert_input(input)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ).generations[0][0],
+    ^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1121, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 931, in generate
+    self._generate_with_cache(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1233, in _generate_with_cache
+    result = self._generate(
+        messages, stop=stop, run_manager=run_manager, **kwargs
+    )
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\langchain_huggingface\chat_models\huggingface.py", line 750, in _generate
+    answer = self.llm.client.chat_completion(messages=message_dicts, **params)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\huggingface_hub\inference\_client.py", line 915, in chat_completion
+    data = self._inner_post(request_parameters, stream=stream)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\huggingface_hub\inference\_client.py", line 275, in _inner_post
+    hf_raise_for_status(response)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\huggingface_hub\utils\_http.py", line 476, in hf_raise_for_status
+    raise _format(HfHubHTTPError, str(e), response) from e
+huggingface_hub.errors.HfHubHTTPError: 401 Client Error: Unauthorized for url: https://router.huggingface.co/novita/v3/openai/chat/completions (Request ID: Root=1-69a96c84-15d41a477d84b35662b26fbd;56691aa2-e043-434f-a908-2423dd8541e3)
+
+User Access Token "teste" is expired
+[2026-03-05 17:14:07,302] INFO - 127.0.0.1 - - [05/Mar/2026 17:14:07] "[35m[1mPOST /api/chat HTTP/1.1[0m" 502 -
+[2026-03-05 17:16:58,940] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2026-03-05 17:16:58,940] INFO - [33mPress CTRL+C to quit[0m
+[2026-03-05 17:16:58,962] INFO -  * Restarting with watchdog (windowsapi)
+[2026-03-05 17:17:14,802] WARNING -  * Debugger is active!
+[2026-03-05 17:17:14,808] INFO -  * Debugger PIN: 108-066-851
+[2026-03-05 17:17:15,071] INFO - 127.0.0.1 - - [05/Mar/2026 17:17:15] "POST /chat HTTP/1.1" 200 -
+[2026-03-05 17:17:15,181] INFO - 127.0.0.1 - - [05/Mar/2026 17:17:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2026-03-05 17:17:15,214] INFO - 127.0.0.1 - - [05/Mar/2026 17:17:15] "[36mGET /static/ui.js HTTP/1.1[0m" 304 -
+[2026-03-05 17:17:30,088] INFO - Video ID extraction started
+[2026-03-05 17:17:30,088] INFO - Video ID extraction completed
+[2026-03-05 17:17:30,088] INFO - Video ID extraction started
+[2026-03-05 17:17:30,089] INFO - Video ID extraction completed
+[2026-03-05 17:17:30,089] INFO - Video transcript extraction started
+[2026-03-05 17:17:32,840] INFO - Video transcript extraction completed
+[2026-03-05 17:17:32,841] INFO - splitting Started
+[2026-03-05 17:17:32,884] INFO - splitting completed
+[2026-03-05 17:17:32,885] INFO - embedding Started
+[2026-03-05 17:17:32,891] INFO - Use pytorch device_name: cpu
+[2026-03-05 17:17:32,892] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2026-03-05 17:17:49,242] INFO - Loading faiss with AVX2 support.
+[2026-03-05 17:17:49,274] INFO - Successfully loaded faiss with AVX2 support.
+[2026-03-05 17:17:49,342] INFO - embedding completed
+[2026-03-05 17:17:49,342] INFO - Semantic Search Started
+[2026-03-05 17:17:49,342] INFO - Semantic Search completed
+[2026-03-05 17:17:52,033] ERROR - Hugging Face API error while handling /api/chat
+Traceback (most recent call last):
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\huggingface_hub\utils\_http.py", line 403, in hf_raise_for_status
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://router.huggingface.co/novita/v3/openai/chat/completions
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\app.py", line 56, in api_chat
+    response = chain.ask(video_url=video_url, question=question)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\rag\chain.py", line 106, in ask
+    answer = chain.invoke({"question": cleaned_question}).strip()
+             ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\langchain_core\runnables\base.py", line 3157, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 402, in invoke
+    self.generate_prompt(
+    ~~~~~~~~~~~~~~~~~~~~^
+        [self._convert_input(input)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ).generations[0][0],
+    ^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1121, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 931, in generate
+    self._generate_with_cache(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1233, in _generate_with_cache
+    result = self._generate(
+        messages, stop=stop, run_manager=run_manager, **kwargs
+    )
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\langchain_huggingface\chat_models\huggingface.py", line 750, in _generate
+    answer = self.llm.client.chat_completion(messages=message_dicts, **params)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\huggingface_hub\inference\_client.py", line 915, in chat_completion
+    data = self._inner_post(request_parameters, stream=stream)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\huggingface_hub\inference\_client.py", line 275, in _inner_post
+    hf_raise_for_status(response)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\huggingface_hub\utils\_http.py", line 476, in hf_raise_for_status
+    raise _format(HfHubHTTPError, str(e), response) from e
+huggingface_hub.errors.HfHubHTTPError: 401 Client Error: Unauthorized for url: https://router.huggingface.co/novita/v3/openai/chat/completions (Request ID: Root=1-69a96d65-772fb4df6035b6eb6ff78c59;d88cb28f-a24b-4e10-b1b3-114faa8a6465)
+
+User Access Token "teste" is expired
+[2026-03-05 17:17:52,045] INFO - 127.0.0.1 - - [05/Mar/2026 17:17:52] "[35m[1mPOST /api/chat HTTP/1.1[0m" 502 -
+[2026-03-05 17:18:40,912] INFO -  * Detected change in 'C:\\Users\\Divya S. Shekhawat\\Downloads\\CODING\\PYTHON\\PROJECTS\\VectorTube\\rag\\chain.py', reloading
+[2026-03-05 17:18:42,653] INFO -  * Restarting with watchdog (windowsapi)
+[2026-03-05 17:20:20,073] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2026-03-05 17:20:20,074] INFO - [33mPress CTRL+C to quit[0m
+[2026-03-05 17:20:20,101] INFO -  * Restarting with watchdog (windowsapi)
+[2026-03-05 17:20:40,807] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2026-03-05 17:20:40,807] INFO - [33mPress CTRL+C to quit[0m
+[2026-03-05 17:20:40,866] INFO -  * Restarting with watchdog (windowsapi)
+[2026-03-05 17:20:52,846] WARNING -  * Debugger is active!
+[2026-03-05 17:20:52,851] INFO -  * Debugger PIN: 108-066-851
+[2026-03-05 17:20:53,055] INFO - 127.0.0.1 - - [05/Mar/2026 17:20:53] "POST /chat HTTP/1.1" 200 -
+[2026-03-05 17:20:53,138] INFO - 127.0.0.1 - - [05/Mar/2026 17:20:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2026-03-05 17:20:53,146] INFO - 127.0.0.1 - - [05/Mar/2026 17:20:53] "[36mGET /static/ui.js HTTP/1.1[0m" 304 -
+[2026-03-05 17:20:56,582] INFO - Video ID extraction started
+[2026-03-05 17:20:56,583] INFO - Video ID extraction completed
+[2026-03-05 17:20:56,583] INFO - Video ID extraction started
+[2026-03-05 17:20:56,583] INFO - Video ID extraction completed
+[2026-03-05 17:20:56,583] INFO - Video transcript extraction started
+[2026-03-05 17:20:59,159] INFO - Video transcript extraction completed
+[2026-03-05 17:20:59,160] INFO - splitting Started
+[2026-03-05 17:20:59,200] INFO - splitting completed
+[2026-03-05 17:20:59,200] INFO - embedding Started
+[2026-03-05 17:20:59,205] INFO - Use pytorch device_name: cpu
+[2026-03-05 17:20:59,205] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2026-03-05 17:21:12,897] INFO - Loading faiss with AVX2 support.
+[2026-03-05 17:21:12,930] INFO - Successfully loaded faiss with AVX2 support.
+[2026-03-05 17:21:12,945] INFO - embedding completed
+[2026-03-05 17:21:12,945] INFO - Semantic Search Started
+[2026-03-05 17:21:12,945] INFO - Semantic Search completed
+[2026-03-05 17:21:14,490] ERROR - Hugging Face API error while handling /api/chat
+Traceback (most recent call last):
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\huggingface_hub\utils\_http.py", line 403, in hf_raise_for_status
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://router.huggingface.co/featherless-ai/v1/chat/completions
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\app.py", line 56, in api_chat
+    response = chain.ask(video_url=video_url, question=question)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\rag\chain.py", line 106, in ask
+    answer = chain.invoke({"question": cleaned_question}).strip()
+             ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\langchain_core\runnables\base.py", line 3157, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 402, in invoke
+    self.generate_prompt(
+    ~~~~~~~~~~~~~~~~~~~~^
+        [self._convert_input(input)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ).generations[0][0],
+    ^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1121, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 931, in generate
+    self._generate_with_cache(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1233, in _generate_with_cache
+    result = self._generate(
+        messages, stop=stop, run_manager=run_manager, **kwargs
+    )
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\langchain_huggingface\chat_models\huggingface.py", line 750, in _generate
+    answer = self.llm.client.chat_completion(messages=message_dicts, **params)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\huggingface_hub\inference\_client.py", line 915, in chat_completion
+    data = self._inner_post(request_parameters, stream=stream)
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\huggingface_hub\inference\_client.py", line 275, in _inner_post
+    hf_raise_for_status(response)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Divya S. Shekhawat\Downloads\CODING\PYTHON\PROJECTS\VectorTube\regvenv\Lib\site-packages\huggingface_hub\utils\_http.py", line 476, in hf_raise_for_status
+    raise _format(HfHubHTTPError, str(e), response) from e
+huggingface_hub.errors.HfHubHTTPError: 401 Client Error: Unauthorized for url: https://router.huggingface.co/featherless-ai/v1/chat/completions (Request ID: Root=1-69a96e30-75f0440157a73be126dddfcd;1ecdcc93-b182-475b-a75b-7e2424d307b8)
+
+User Access Token "teste" is expired
+[2026-03-05 17:21:14,501] INFO - 127.0.0.1 - - [05/Mar/2026 17:21:14] "[35m[1mPOST /api/chat HTTP/1.1[0m" 502 -
+[2026-03-05 17:36:38,520] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2026-03-05 17:36:38,520] INFO - [33mPress CTRL+C to quit[0m
+[2026-03-05 17:36:38,540] INFO -  * Restarting with watchdog (windowsapi)
+[2026-03-05 17:36:51,942] WARNING -  * Debugger is active!
+[2026-03-05 17:36:51,947] INFO -  * Debugger PIN: 108-066-851
+[2026-03-05 17:36:54,312] INFO - 127.0.0.1 - - [05/Mar/2026 17:36:54] "POST /chat HTTP/1.1" 200 -
+[2026-03-05 17:36:54,428] INFO - 127.0.0.1 - - [05/Mar/2026 17:36:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2026-03-05 17:36:54,430] INFO - 127.0.0.1 - - [05/Mar/2026 17:36:54] "[36mGET /static/ui.js HTTP/1.1[0m" 304 -
+[2026-03-05 17:36:58,579] INFO - Video ID extraction started
+[2026-03-05 17:36:58,580] INFO - Video ID extraction completed
+[2026-03-05 17:36:58,580] INFO - Video ID extraction started
+[2026-03-05 17:36:58,580] INFO - Video ID extraction completed
+[2026-03-05 17:36:58,580] INFO - Video transcript extraction started
+[2026-03-05 17:37:24,094] INFO - Video transcript extraction completed
+[2026-03-05 17:37:24,095] INFO - splitting Started
+[2026-03-05 17:37:24,138] INFO - splitting completed
+[2026-03-05 17:37:24,138] INFO - embedding Started
+[2026-03-05 17:37:24,142] INFO - Use pytorch device_name: cpu
+[2026-03-05 17:37:24,143] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2026-03-05 17:37:47,728] INFO - Loading faiss with AVX2 support.
+[2026-03-05 17:37:47,761] INFO - Successfully loaded faiss with AVX2 support.
+[2026-03-05 17:37:47,777] INFO - embedding completed
+[2026-03-05 17:37:47,778] INFO - Semantic Search Started
+[2026-03-05 17:37:47,778] INFO - Semantic Search completed
+[2026-03-05 17:37:51,545] INFO - 127.0.0.1 - - [05/Mar/2026 17:37:51] "POST /api/chat HTTP/1.1" 200 -
+[2026-03-05 17:38:24,080] INFO - Video ID extraction started
+[2026-03-05 17:38:24,080] INFO - Video ID extraction completed
+[2026-03-05 17:38:29,469] INFO - 127.0.0.1 - - [05/Mar/2026 17:38:29] "POST /api/chat HTTP/1.1" 200 -
+[2026-03-05 17:41:18,019] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2026-03-05 17:41:18,019] INFO - [33mPress CTRL+C to quit[0m
+[2026-03-05 17:41:18,038] INFO -  * Restarting with watchdog (windowsapi)
+[2026-03-05 17:41:27,728] WARNING -  * Debugger is active!
+[2026-03-05 17:41:27,731] INFO -  * Debugger PIN: 108-066-851
+[2026-03-05 17:41:44,721] INFO - 127.0.0.1 - - [05/Mar/2026 17:41:44] "GET / HTTP/1.1" 200 -
+[2026-03-05 17:41:44,856] INFO - 127.0.0.1 - - [05/Mar/2026 17:41:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2026-03-05 17:41:44,858] INFO - 127.0.0.1 - - [05/Mar/2026 17:41:44] "[36mGET /static/ui.js HTTP/1.1[0m" 304 -
+[2026-03-05 17:41:45,041] INFO - 127.0.0.1 - - [05/Mar/2026 17:41:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2026-03-05 17:42:32,354] INFO - 127.0.0.1 - - [05/Mar/2026 17:42:32] "POST /chat HTTP/1.1" 200 -
+[2026-03-05 17:42:32,381] INFO - 127.0.0.1 - - [05/Mar/2026 17:42:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2026-03-05 17:42:32,384] INFO - 127.0.0.1 - - [05/Mar/2026 17:42:32] "[36mGET /static/ui.js HTTP/1.1[0m" 304 -
+[2026-03-05 17:43:15,640] INFO - Video ID extraction started
+[2026-03-05 17:43:15,640] INFO - Video ID extraction completed
+[2026-03-05 17:43:15,640] INFO - Video ID extraction started
+[2026-03-05 17:43:15,641] INFO - Video ID extraction completed
+[2026-03-05 17:43:15,641] INFO - Video transcript extraction started
+[2026-03-05 17:43:26,722] INFO - Video transcript extraction completed
+[2026-03-05 17:43:26,722] INFO - splitting Started
+[2026-03-05 17:43:26,728] INFO - splitting completed
+[2026-03-05 17:43:26,729] INFO - embedding Started
+[2026-03-05 17:43:26,733] INFO - Use pytorch device_name: cpu
+[2026-03-05 17:43:26,733] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2026-03-05 17:43:51,355] INFO - Loading faiss with AVX2 support.
+[2026-03-05 17:43:51,387] INFO - Successfully loaded faiss with AVX2 support.
+[2026-03-05 17:43:51,400] INFO - embedding completed
+[2026-03-05 17:43:51,400] INFO - Semantic Search Started
+[2026-03-05 17:43:51,400] INFO - Semantic Search completed
+[2026-03-05 17:43:57,512] INFO - 127.0.0.1 - - [05/Mar/2026 17:43:57] "POST /api/chat HTTP/1.1" 200 -
+[2026-03-05 17:44:35,810] INFO - Video ID extraction started
+[2026-03-05 17:44:35,810] INFO - Video ID extraction completed
+[2026-03-05 17:44:42,826] INFO - 127.0.0.1 - - [05/Mar/2026 17:44:42] "POST /api/chat HTTP/1.1" 200 -

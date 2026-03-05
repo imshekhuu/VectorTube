@@ -73,6 +73,32 @@ body::before{
  width:420px;
 }
 
+.glass-card form{
+ display:flex;
+ gap:10px;
+ margin-top:18px;
+}
+
+.glass-card input{
+ flex:1;
+ padding:14px;
+ border-radius:14px;
+ border:1px solid rgba(255,255,255,0.1);
+ background:#020617;
+ color:white;
+}
+
+.glass-card button{
+ margin-left:0;
+}
+
+.form-error{
+ color:#fda4af;
+ margin-top:12px;
+ margin-bottom:0;
+ font-size:13px;
+}
+
 .layout{
  display:flex;
  height:100vh;

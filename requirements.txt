@@ -2,6 +2,10 @@
 langchain
 langchain-core
 langchain-community
+langchain-text-splitters
+
+# ===== Web App =====
+flask
 
 # ===== OpenAI Integration =====
 langchain-openai

@@ -5,11 +5,14 @@
   <div class="glass-card">
     <h1>Chat With Any YouTube Video</h1>
 
+    {% if error %}
+    <p class="form-error">{{ error }}</p>
+    {% endif %}
+
     <form method="POST" action="/chat">
       <input name="video_link" placeholder="Paste YouTube link..." required>
-      <button type="submit">Start Chat →</button>
+      <button type="submit">Start Chat -></button>
     </form>
-
   </div>
 </div>
 
