@@ -1,6 +1,4 @@
-# environment variables
 .env
-
 
 # python cache
 __pycache__/
